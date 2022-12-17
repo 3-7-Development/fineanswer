@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fineanswer - An Answer for your Finances</title>
     <link  rel="stylesheet" href="index.css?v=<?php echo time() ?>">
+    <link rel="icon" href="favicon.png">
 
     <script src="index.js" ></script>
 </head>
 <body>
     <div id="top">
+        <img src="favicon.png" style="padding-left: 5px; height: 45px; width:auto;" alt="logo">
 
     </div>
     <div id="earn">
