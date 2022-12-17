@@ -1,39 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
     display: flexbox;
+    font-family: 'Poppins', sans-serif;
 }
-#earn::-webkit-scrollbar {
-    display: none;
-  }
-#pay::-webkit-scrollbar {
-    display: none;
+
+body{
+    background-color: snow;
+
 }
 #earn{
-    background-color: #7C7C7C;
+    background-color: snow;
+    box-shadow: 1px 0px 2px lightgray;
     width: 15%;
     float: left;
     height: 95vh;
     color:#D9D9D9;
-    overflow-y:scroll;
+
+    
 }
 
 #earn h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 150%;
     width: 100%;
+    color:black;
     text-align: center;
 }
 
+.earn_btn{
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+    
+    width: 75px !important;
+    
+    background-color: #242424;
+    border-radius: 5px;
+}
+
 #pay{
-    background-color: #7C7C7C;
+    background-color: snow;
+    box-shadow: -1px 0px 2px lightgray;
     width: 20%;
     float: right;
     height: 95vh;
     overflow-y:scroll;
+    
+    
+}
+
+.pay_btn{
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+   
+    width: 75px !important;
+   
+    background-color: #242424;
+    border-radius: 5px;
+}
+
+#pay h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#pay h2{
+    
 }
 
 #mid{
-    
-    height: 95vh;
+    width: 95%;
+   
+    background-color: snow;
 }
 
 .cat{
@@ -57,6 +102,9 @@
 
 .add input{
     width: 90%;
+    height:30px;
+    font-size:24px;
+    padding: 5px;
     background-color: #1e2c6e;
     border: 0;
     margin-left: 5% ;
@@ -85,6 +133,29 @@ input::-webkit-inner-spin-button {
     text-align: left;
     margin-top: 10px;
     margin-left: 20%;
+    
+    background-color: whitesmoke;
+    width: 80%;
+    height: 75px;
+    margin: auto;
+    margin-bottom:15px;
+    border-radius:10px;
+    text-align: center;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.earnings h3{
+    margin-top: 5%;
+    opacity: 1;
+    color: gray;
+    font-size: 1.2em;
+}
+
+.earnings p{
+    color: gray;
+    
+    margin-bottom: 5%;
+    font-size:16px;
 }
 
 #top{
@@ -94,25 +165,42 @@ input::-webkit-inner-spin-button {
 }
 
 .category{
-    background-color: #FF0000;
+    background-color: whitesmoke;
+   
+    border-radius: 15px;
     margin: 10px;
     padding-bottom: 10px;
+    opacity: 1;
+    color: gray;
+  
+    box-shadow: 2px 2px 3px lightgray;
 }
-.category h1{
+.category h2{
     margin-left: 30px;
     padding: 5px;
 }
 
 .payments{
-    background-color: #e11c1c;
-    margin-left:0 ;
-    margin-right: 0;
-    width: 100%;
-    padding: 5px;
-    padding-left: 30px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+   
+    box-shadow: 2px 2px 3px lightgray;
 }
-.payments:nth-child(even){
-    background-color: #d12b2b;
+
+
+.payments h3{
+    margin-top: 5%;
+    font-size: 24px;
+}
+
+.payments p{
+    margin-bottom: 5%;
+    font-size:16px;
 }
 
 .debt_display{
@@ -124,7 +212,7 @@ input::-webkit-inner-spin-button {
     background-color: darkred;
     border: 2px solid black;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    box-shadow: 1px 0px 2px lightgray;
 
 }
 
@@ -170,6 +258,10 @@ input::-webkit-inner-spin-button {
     z-index: 0;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
 @keyframes float_text {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -184,3 +276,66 @@ input::-webkit-inner-spin-button {
 		transform: translatey(0px);
 	}*/
 }
+
+.debt_box{
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    height: 30px;
+    position: relative;
+    border-radius: 10px;
+  
+ 
+}
+
+.progress{
+    position: relative;
+    background-color: #5849B3;
+    height: 28px;
+    border-radius: 10px;
+    
+  
+}
+
+.title{
+    position: relative;
+    top:10px;
+    margin:auto;
+    width: 100%;
+    text-align: center;
+ 
+}
+
+.graph{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 300px;
+    box-shadow: -1px 1px 1px black;
+    margin: auto;
+}
+.graph>div{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    top:50px;
+    
+    align-items: center;
+    text-align: center;
+}
+
+.right{
+    float: right;
+    position: relative;
+    top:-230px;
+    right: 170px;
+    text-align: left;
+    font-size: 1.2em;
+}
+.right>p{
+    margin-bottom: 50px;
+}
+
+

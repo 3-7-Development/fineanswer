@@ -5,6 +5,6 @@
  $res = mysqli_query($db,"SELECT * FROM zyski");
     while($a = mysqli_fetch_row($res))
     {
-        echo "<div class='earnings'><h3>".$a[1]."</h3><div>".$a[2]."</div></div>";
+        echo "<div class='earnings'><h3>".$a[1]."</h3><div><p>".$a[2]."zł</p></div></div>";
     }
 ?>
