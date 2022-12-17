@@ -149,12 +149,15 @@
                              
                                   }
 
-        ?>      <div class="summary">
+        ?>     
+        
+        <h1 class="zest">Zestawienie finansowe</h1>
+        <div class="summary">
            <div class="graph" style="position:relative;right:300px">
 
-            <div style="width:<?php echo round($pay/$earn*100);?>%;height:50px;background-color:red;"><?php echo round($pay/$earn*100);?>% - OPŁATY</div>
-            <div style="width:<?php echo round($suma/$earn*100);?>%;height:50px;background-color:orange;"><?php echo round($suma/$earn*100);?>% - SPŁATA</div>
-            <div style="width:<?php echo round(($earn-$suma-$pay)/$earn*100);?>%;height:50px;background-color:green;"><?php echo round(($earn-$suma-$pay)/$earn*100);?>% - OSZCZĘDNOŚĆ</div>
+            <div style="width:<?php echo round($pay/$earn*100);?>%;height:50px;background-color:rgba(255,0,0,0.5);"><?php echo round($pay/$earn*100);?>% - OPŁATY</div>
+            <div style="width:<?php echo round($suma/$earn*100);?>%;height:50px;background-color:rgba(255,165,0,0.5);"><?php echo round($suma/$earn*100);?>% - SPŁATA</div>
+            <div style="width:<?php echo round(($earn-$suma-$pay)/$earn*100);?>%;height:50px;background-color:rgba(0,163,0,0.5);"><?php echo round(($earn-$suma-$pay)/$earn*100);?>% - OSZCZĘDNOŚĆ</div>
              </div>
              <div class="right">
              <p>
