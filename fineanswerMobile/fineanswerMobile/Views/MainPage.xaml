@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fineanswerMobile.Views.MainPage"
+             xmlns:viewmodels="clr-namespace:fineanswerMobile.ViewModels"
+             xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodels:MainPageViewModel"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#4c3b8f">
+
+    <ContentPage.Behaviors>
+        <xct:EventToCommandBehavior
+            EventName="Appearing"
+            Command="{Binding AppearingCommand}"/>
+    </ContentPage.Behaviors>
+
+    <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="*">
+        <HorizontalStackLayout Grid.Row="0"
+                               BackgroundColor="White"
+                               HorizontalOptions="CenterAndExpand">
+            <Label 
+                Text="{Binding Title}"
+                Style="{StaticResource PageHeader}"
+                Margin="0,50,0,40"
+                Padding="80,0"/>
+        </HorizontalStackLayout>
+
+        <ScrollView Grid.Row="1"
+                             BackgroundColor="White">
+
+            <VerticalStackLayout>
+
+                <Image Source="{Binding Diagram}"
+                       Margin="10,30">
+                    <Image.Shadow>
+                        <Shadow Brush="Black"
+                                Offset="0,20"
+                                Radius="200"
+                                Opacity="0.4"/>
+                    </Image.Shadow>
+
+                </Image>
+
+                <Grid
+                      RowDefinitions="auto, auto, auto, auto"
+                      HorizontalOptions="StartAndExpand"
+                      Margin="35,0">
+
+                    <HorizontalStackLayout Grid.Row="0" Margin="0,10">
+                        <Label Text="{StaticResource BillsIcon}"
+                           FontFamily="FAS"
+                           FontSize="18"
+                           TextColor="#0064F6"
+                           Margin="10,0"/>
+
+                        <Label Text="Rachunki"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontFamily="Arial"/>
+
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Row="1" Margin="0,10">
+                        <Label Text="{StaticResource FoodIcon}"
+                           FontFamily="FAS"
+                           FontSize="18"
+                           TextColor="#F18B12"
+                           Margin="10,0"/>
+
+                        <Label Text="Jedzenie"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontFamily="Arial"/>
+
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Row="2" Margin="0,10">
+                        <Label Text="{StaticResource EntertainmentIcon}"
+                           FontFamily="FAS"
+                           FontSize="18"
+                           TextColor="#27CD43"
+                           Margin="10,0"/>
+
+                        <Label Text="Rozrywka"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontFamily="Arial"/>
+
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Row="3" Margin="0,10">
+                        <Label Text="{StaticResource AnotherIcon}"
+                           FontFamily="FAS"
+                           FontSize="18"
+                           TextColor="#F8F200"
+                           Margin="10,0"/>
+
+                        <Label Text="Inne"
+                               TextColor="Black"
+                               FontSize="18"
+                               FontFamily="Arial"/>
+
+                    </HorizontalStackLayout>
+                </Grid>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+        <Grid Style="{StaticResource NavigationBar}"
+                               Grid.Row="2" Grid.ColumnSpan="2"
+                               ColumnDefinitions="auto, auto, auto">
+
+            <Button Command="{Binding GoToEarningsPageCommand}"
+                    Text="E"
+                    Style="{StaticResource BottomMenuButton}"
+                    Grid.Column="0"/>
+
+            <Button
+                Text="$"
+                Style="{StaticResource BottomMenuButton}"
+                Grid.Column="1"/>
+
+            <Button Command="{Binding GoToCostsPageCommand}"
+                    Text="C"
+                    Style="{StaticResource BottomMenuButton}"
+                    Grid.Column="2"/>
+        </Grid>
+    </Grid>
+</ContentPage>
