@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fineanswer - An Answer for your Finances</title>
     <link  rel="stylesheet" href="index.css?v=<?php echo time() ?>">
 
     <script src="index.js" ></script>
@@ -122,7 +122,11 @@
                         ?>
                                 <div class="title">
                                                                 <h4><?php echo $tab["nazwa"] ?></h4>
+<<<<<<< HEAD
                                 <div><?php echo round($tab["ilosc_splacona"]/$tab["wartosc"]*100);?>% </div>
+=======
+                                <div><?php echo "<b>".round($tab["ilosc_splacona"]/$tab["wartosc"]*100);?>%</b> <?php echo " (".$tab["ilosc_splacona"]." PLN / ".$tab['wartosc']." PLN)"; ?></div>
+>>>>>>> b1ca0b0 (halo maciek nie spij)
                                 <div>
                             <div  class="debt_box">
                                 <div style="width:<?php echo round($tab["ilosc_splacona"]/$tab["wartosc"]*100);?>%" class="progress"></div>  </div>
