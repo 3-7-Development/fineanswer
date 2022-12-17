@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{93023E7B-71E5-4EC4-88D2-88D7CD463856}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.fineanswerMobile PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="fineanswerMobile/Resources/Styles/Styles.xaml">
+    <Files>
+      <File FileName="fineanswerMobile/ViewModels/MainPageViewModel.cs" />
+      <File FileName="fineanswerMobile/ViewModels/CostsPageViewModel.cs" Line="55" Column="45" />
+      <File FileName="fineanswerMobile/ViewModels/EarningsPageViewModel.cs" Line="55" Column="46" />
+      <File FileName="fineanswerMobile/fineanswerMobile.csproj" Line="35" Column="70" />
+      <File FileName="fineanswerMobile/Views/MainPage.xaml" />
+      <File FileName="fineanswerMobile/Views/CostsPage.xaml" />
+      <File FileName="fineanswerMobile/Views/EarningsPage.xaml" Line="1" Column="1" />
+      <File FileName="fineanswerMobile/Resources/Styles/Styles.xaml" Line="414" Column="53" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="fineanswerMobile" expanded="True">
+            <Node name="fineanswerMobile" expanded="True">
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Platforms" expanded="True">
+                <Node name="Android" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="AppIcon" expanded="True" />
+                <Node name="Fonts" expanded="True" />
+                <Node name="Images" expanded="True" />
+                <Node name="Styles" expanded="True">
+                  <Node name="Styles.xaml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
