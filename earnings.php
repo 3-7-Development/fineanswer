@@ -1,5 +1,5 @@
 <?php
- $db = mysqli_connect("139.162.177.109", "syh37DevUser", "Th!s!sB3stP4ssw0rd", "sheepurhack");
+ $db = mysqli_connect("localhost", "syh37DevUser", "Th!s!sB3stP4ssw0rd", "sheepurhack");
 
 
  $res = mysqli_query($db,"SELECT * FROM zyski");
