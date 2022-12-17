@@ -116,7 +116,7 @@
                     $value = $_POST['wartosc'];
                     $date = $_POST['data'];
 
-                    $db = mysqli_connect("localhost", "syh37DevUser", "Th!s!sB3stP4ssw0rd", "sheepurhack");
+                    $db = mysqli_connect("139.162.177.109", "syh37DevUser", "Th!s!sB3stP4ssw0rd", "sheepurhack");
                    
 
                     mysqli_query($db,"INSERT INTO dlugi (nazwa,wartosc,ilosc_splacona,deadline) VALUES ('$name','$value',0,'$date')");
@@ -133,7 +133,7 @@
 
         <?php
 
-            $db = mysqli_connect("localhost", "syh37DevUser", "Th!s!sB3stP4ssw0rd", "sheepurhack");
+            $db = mysqli_connect("139.162.177.109", "syh37DevUser", "Th!s!sB3stP4ssw0rd", "sheepurhack");
                
 
                 $q = mysqli_query($db,"SELECT * FROM dlugi");
