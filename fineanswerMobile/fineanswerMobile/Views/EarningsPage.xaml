@@ -79,20 +79,34 @@
                                Grid.Row="2" Grid.ColumnSpan="2"
                                ColumnDefinitions="auto, auto, auto">
 
-            <Button Text="E"
+            <!--<Button Command="{Binding GoToEarningsPageCommand}"
+                    Text="E"
                     Style="{StaticResource BottomMenuButton}"
-                    Grid.Column="0"/>
+                    Grid.Column="0"/>-->
 
-            <Button
+            <ImageButton Source="earningsicon.png"
+                         Grid.Column="0"
+                         Style="{StaticResource BottomMenuButton}"/>
+
+            <!--<Button
                 Text="$"
                 Style="{StaticResource BottomMenuButton}"
-                Command="{Binding GoToMainPageCommand}"
-                Grid.Column="1"/>
+                Grid.Column="1"/>-->
 
-            <Button Command="{Binding GoToCostsPageCommand}"
+            <ImageButton Source="mainpageicon.png"
+                         Command="{Binding GoToMainPageCommand}"
+                         Style="{StaticResource BottomMenuButton}"
+                         Grid.Column="1"/>
+
+            <!--<Button Command="{Binding GoToCostsPageCommand}"
                     Text="C"
                     Style="{StaticResource BottomMenuButton}"
-                    Grid.Column="2"/>
+                    Grid.Column="2"/>-->
+
+            <ImageButton Command="{Binding GoToCostsPageCommand}"
+                         Source="costsicon.png"
+                         Style="{StaticResource BottomMenuButton}"
+                         Grid.Column="2"/>
         </Grid>
     </Grid>
 </ContentPage>

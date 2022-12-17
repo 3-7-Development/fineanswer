@@ -414,14 +414,15 @@
         <Setter Property="TextColor" Value="Black"/>
     </Style>
 
-    <Style x:Key="BottomMenuButton" TargetType="Button">
+    <Style x:Key="BottomMenuButton" TargetType="ImageButton">
         <Setter Property="HorizontalOptions" Value="Center"/>
-        <Setter Property="CornerRadius" Value="50"/>
+        <!--<Setter Property="CornerRadius" Value="30"/>-->
         <Setter Property="WidthRequest" Value="45"/>
         <Setter Property="HeightRequest" Value="45"/>
         <Setter Property="Margin" Value="30,16"/>
+        <!--<Setter Property="BackgroundColor" Value="#E3E3E3"/>-->
         <Setter Property="BorderColor" Value="#F2F2F2"/>
-        <Setter Property="BorderWidth" Value="2"/>
+        <!--<Setter Property="BorderWidth" Value="2"/>-->
     </Style>
 
     <Style x:Key="NavigationBar" TargetType="Grid">

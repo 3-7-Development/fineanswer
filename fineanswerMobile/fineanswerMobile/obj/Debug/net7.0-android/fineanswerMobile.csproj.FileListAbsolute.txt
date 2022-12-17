@@ -999,3 +999,11 @@
 /Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/earningsicon.png
 /Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/costsicon.png
 /Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/earningsicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable/costsicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable/earningsicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable/mainpageicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-hdpi/mainpageicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-mdpi/mainpageicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-xhdpi/mainpageicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-xxhdpi/mainpageicon.png
+/Users/gal0wsky/Documents/Projekty/fineanswer/fineanswerMobile/fineanswerMobile/obj/Debug/net7.0-android/resizetizer/r/drawable-xxxhdpi/mainpageicon.png

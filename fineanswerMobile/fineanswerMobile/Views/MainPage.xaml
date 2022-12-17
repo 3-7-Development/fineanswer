@@ -36,7 +36,7 @@
                         <Shadow Brush="Black"
                                 Offset="0,20"
                                 Radius="200"
-                                Opacity="0.4"/>
+                                Opacity="0.8"/>
                     </Image.Shadow>
 
                 </Image>
@@ -111,20 +111,34 @@
                                Grid.Row="2" Grid.ColumnSpan="2"
                                ColumnDefinitions="auto, auto, auto">
 
-            <Button Command="{Binding GoToEarningsPageCommand}"
+            <!--<Button Command="{Binding GoToEarningsPageCommand}"
                     Text="E"
                     Style="{StaticResource BottomMenuButton}"
-                    Grid.Column="0"/>
+                    Grid.Column="0"/>-->
 
-            <Button
+            <ImageButton Command="{Binding GoToEarningsPageCommand}"
+                         Source="earningsicon.png"
+                         Grid.Column="0"
+                         Style="{StaticResource BottomMenuButton}"/>
+
+            <!--<Button
                 Text="$"
                 Style="{StaticResource BottomMenuButton}"
-                Grid.Column="1"/>
+                Grid.Column="1"/>-->
 
-            <Button Command="{Binding GoToCostsPageCommand}"
+            <ImageButton Source="mainpageicon.png"
+                         Style="{StaticResource BottomMenuButton}"
+                         Grid.Column="1"/>
+
+            <!--<Button Command="{Binding GoToCostsPageCommand}"
                     Text="C"
                     Style="{StaticResource BottomMenuButton}"
-                    Grid.Column="2"/>
+                    Grid.Column="2"/>-->
+
+            <ImageButton Command="{Binding GoToCostsPageCommand}"
+                         Source="costsicon.png"
+                         Style="{StaticResource BottomMenuButton}"
+                         Grid.Column="2"/>
         </Grid>
     </Grid>
 </ContentPage>
